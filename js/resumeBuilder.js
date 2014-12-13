@@ -4,16 +4,16 @@
 
 
 var bio = {
-    "name": "Joseph Faydere",
+    "name": "Joseph Fayad",
     "role": "Web Developer",
-    "welcomeMessage": "WELCOME TO MY WEBPAGER BEEPBEEPBEEP",
+    "welcomeMessage": "WELCOME TO MY WEB PAGE",
     "contacts": {
         "mobile number": "973-460-9323",
         "email": "joefayad86@gmail.com",
         "github": "fiyrefido",
         "location": " 6415 Bergenwood Ave, North Bergen, NJ"
     },
-    "skills": ["ninjato", "samurai", "giant", "skilll"],
+    "skills": ["ninjato", "samurai", "giant", "skill"],
     "bioPic": "images/fry.jpg"
 };
 
@@ -66,11 +66,11 @@ var work = {
             "description": "Code ninja guru master"
         },
         {
-            "employer": "Encapsulated 2",
-            "title": "Code Guru 2",
+            "employer": "Assassin Rogue",
+            "title": "Code Guru Monk Master",
             "location": " 128 Broad Street, Clifton, NJ",
             "dates worked": "2015 ",
-            "description": "Code ninja guru master 2"
+            "description": "Code ninja gunsmith"
         }
     ]
 };
@@ -101,9 +101,9 @@ var projects = {
             "images": ["images/197x148.gif", "images/197x148.gif"]
         },
         {
-            "title": "Udacity mug webpage2",
-            "dates worked": "20142",
-            "description": "2webpage designed with header custom fonts and bootstrap framework for udacity mug marketing",
+            "title": "Udacity Resume",
+            "dates worked": "2014",
+            "description": "Udacity Javascript resume",
             "images": ["images/197x148.gif", "images/197x148.gif", "images/197x148.gif"]
         }
     ]
@@ -145,10 +145,10 @@ var education = {
         {
             "name": "Clifton highschool",
             "location": "Clifton, NJ",
-            "degree": "HS Diploma2",
-            "majors": ["Psycology2", "Math2"],
-            "dates attended": "20052",
-            "url": "http://www.parklandsd22222.org/"
+            "degree": "HS Diploma",
+            "majors": ["History", "Science"],
+            "dates attended": "2005",
+            "url": "http://www.clifton.k12.nj.us/hs/"
         }
     ],
     "onlineCourses": [
@@ -160,14 +160,20 @@ var education = {
 
         },
         {
-            "title": "Front-End web developer 2222(Nano-Degree)",
-            "school": "Udacity2",
-            "dates attended": "2014-2015222222",
-            "url": "https://www.udacity222222222.com/course/nd001"
+            "title": "college",
+            "school": "PCCC",
+            "dates attended": "2010",
+            "url": "http://www.pccc.edu/"
 
         }
     ]
 };
+
+education.display = function () {
+    education.displaySchool();
+    education.displayOnlineCourses();
+}
+
 
 education.displaySchool = function () {
     for (var index in education.schools) {
@@ -206,9 +212,8 @@ education.displayOnlineCourses = function () {
 
 bio.display();
 work.display();
-education.displayOnlineCourses();
 projects.display();
-education.displaySchool();
+education.display();
 
 
 
